@@ -1,0 +1,89 @@
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 866px;
+
+  .contact__description-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .contact__description-title {
+    font-family: "ralewaybold", serif;
+    font-size: 90px;
+    font-weight: $bold;
+  }
+
+  .contact__description-textholder {
+    text-align: center;
+    width: 350px;
+    padding: 50px 40px;
+  }
+
+  .contact__description-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 17px;
+    font-weight: $light;
+  }
+
+  .contact-container__form-holder {
+    display: flex;
+    width: 500px;
+    min-height: 445px;
+  }
+
+  .contact-container__contacts-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-container__form-input {
+    background-color: #7bdddc;
+    color: $white;
+    border: none;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 16px;
+    transition: all ease-in-out 0.6s;
+  }
+
+  .contact-container__form-input:hover {
+    border-left: 2px solid #355b82;
+  }
+
+  .contact-container__form-input:last-child {
+    display: flex;
+    align-items: flex-start;
+    width: 500px;
+    height: 250px;
+  }
+
+  .contact-container__form-holder {
+    display: flex;
+    width: 835px;
+  }
+
+  ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #fff;
+  }
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+  }
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+  }
+  :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #fff;
+  }
+}

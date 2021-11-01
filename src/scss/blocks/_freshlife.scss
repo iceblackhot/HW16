@@ -1,0 +1,144 @@
+.freshlife-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.freshlife {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 150px;
+  padding: 50px 0 25%;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__lmg {
+    display: flex;
+    max-width: 100%;
+  }
+
+  &__menu {
+    display: flex;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  &__link {
+    display: flex;
+    position: relative;
+    padding: 5px 20px;
+    color: black;
+  }
+
+  &__link::before {
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ff6033;
+    transform: scaleX(0);
+    transition: 0.7s;
+  }
+
+  &__link:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+.freshlife-holder {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    min-height: 275px;
+  }
+
+  &__title {
+    font-family: "Raleway", sans-serif;
+    font-weight: $bold;
+    font-size: 60px;
+    padding: 15px 15px 30px 15px;
+  }
+
+  &__text-holder {
+    padding: 15px;
+  }
+
+  &__text {
+    font-family: "Raleway", sans-serif;
+    font-weight: $light;
+    font-size: 17px;
+    padding-bottom: 30px;
+  }
+
+  &__button-holder {
+    padding-left: 15px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 55px;
+    background-color: #ff6033;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    transition: 0.7s;
+  }
+
+  &__button:hover {
+    background-color: violet;
+  }
+
+  &__mouse-button-holder:hover {
+    transform: scale(1.1);
+  }
+}
+
+.mouse-btn-holder {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  min-height: 260px;
+  padding: 70px;
+
+  &__link {
+    transition: all ease-in-out 0.6s;
+  }
+
+  &__link:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}

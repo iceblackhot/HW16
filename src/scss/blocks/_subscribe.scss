@@ -1,0 +1,71 @@
+.subscribe__container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 500px;
+}
+
+.subscribe__container-description {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.subscribe__container-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: $bold;
+  padding: 15px 15px 15px 50px;
+}
+
+.subscribe__container-textholder {
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  font-weight: $light;
+  max-width: 540px;
+  padding: 20px 50px;
+}
+
+.subscribe__container-formholder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+}
+
+.subscribe__container-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subscribe__email-inputholder {
+  padding: 20px 30px 20px;
+}
+
+.subscribe__email-input {
+  border-radius: none;
+  border: 2px solid black;
+  width: 570px;
+  height: 55px;
+}
+
+.subscribe__btn-holder {
+  padding: 20px;
+}
+
+.subscribe__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 55px;
+  background-color: #96b92c;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: all ease-in-out 0.6s;
+}
+
+.subscribe__btn:hover {
+  background-color: violet;
+}

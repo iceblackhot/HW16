@@ -6,84 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/css/main.css" />
     <link rel="stylesheet" href="src/css/normalize.css" />
-    <title>HW16Lesson</title>
-    <style>
-      body {
-        background-image: url(src/img/background.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-      }
-    </style>
-    <style>
-      .subscribe__container {
-        background-image: url(src/img/background2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-      }
-    </style>
-    <style>
-      .contact__container {
-        background-image: url(src/img/background3.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
-      }
-    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/js/main.js"></script>
+    <title>HW17Lesson</title>
   </head>
   <body>
     <header class="freshlife-header">
-      <div class="freshlife">
-        <div class="freshlife__logo">
-          <a class="freshlife__img" href="#">
-            <img src="src/img/logo.png" alt="Logo img" />
-          </a>
+      <div class="container">
+        <div class="freshlife">
+          <div class="freshlife__logo">
+            <a class="freshlife__img" href="#">
+              <img src="src/img/logo.png" alt="Logo img" />
+            </a>
+          </div>
+          <nav class="freshlife__menu">
+            <ul class="freshlife__item">
+              <li class="freshlife__list">
+                <a class="freshlife__link" href="#">HOME</a>
+                <ul class="nav__sub-menu">
+                  <li class="nav__sub-item">
+                    <a href="#" class="nav__sub-link">apple</a>
+                  </li>
+                  <li class="nav__sub-item">
+                    <a href="#" class="nav__sub-link">apricot</a>
+                  </li>
+                  <li class="nav__sub-item">
+                    <a href="#" class="nav__sub-link">banana</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="freshlife__link" href="#">ABOUT</a>
+              </li>
+              <li>
+                <a class="freshlife__link" href="#">SERVICES</a>
+              </li>
+              <li>
+                <a class="freshlife__link" href="#">GALLERY</a>
+              </li>
+              <li>
+                <a class="freshlife__link" href="#">BLOG</a>
+              </li>
+              <li>
+                <a class="freshlife__link" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="burger-btn js-nav-opener"><span></span></button>
         </div>
-        <nav class="freshlife__menu">
-          <ul class="freshlife__item">
-            <li class="freshlife__list">
-              <a class="freshlife__link" href="#">HOME</a>
-            </li>
-            <li>
-              <a class="freshlife__link" href="#">ABOUT</a>
-            </li>
-            <li>
-              <a class="freshlife__link" href="#">SERVICES</a>
-            </li>
-            <li>
-              <a class="freshlife__link" href="#">GALLERY</a>
-            </li>
-            <li>
-              <a class="freshlife__link" href="#">BLOG</a>
-            </li>
-            <li>
-              <a class="freshlife__link" href="#">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
     <main>
-      <div class="freshlife-holder">
-        <div class="freshlife-holder__block">
-          <h1 class="freshlife-holder__title">Fresh Life</h1>
-          <div class="freshlife-holder__text-holder">
-            <p class="freshlife-holder__text">
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-            </p>
-          </div>
-          <div class="freshlife-holder__button-holder">
-            <a class="freshlife-holder__button" href="#">GET FREE NOW</a>
+      <section
+        class="freshlife-holder"
+        style="background-image: url(src/img/background.png)"
+      >
+        <div class="container">
+          <div class="freshlife-holder__block">
+            <h1 class="freshlife-holder__title">Fresh Life</h1>
+            <div class="freshlife-holder__text-holder">
+              <p class="freshlife-holder__text">
+                Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco.
+              </p>
+            </div>
+            <div class="freshlife-holder__button-holder">
+              <a class="freshlife-holder__button" href="#">GET FREE NOW</a>
+            </div>
+            <div class="mouse-btn-holder">
+              <a href="#" class="mouse-btn-holder__link"
+                ><img src="src/img/scroll.png" alt="mouse btn img"
+              /></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="mouse-btn-holder">
-        <a href="#" class="mouse-btn-holder__link"
-          ><img src="src/img/scroll.png" alt="mouse btn img"
-        /></a>
-      </div>
+      </section>
       <div class="about-us">
         <div class="about-us__img-holder">
           <img
@@ -207,7 +209,10 @@
           <a class="fruits__button" href="#">VIEW MORE</a>
         </div>
       </div>
-      <div class="subscribe__container">
+      <div
+        class="subscribe__container"
+        style="background-image: url(src/img/background2.png)"
+      >
         <div class="subscribe__container-description">
           <h2 class="subscribe__container-title">Subscribe To Us</h2>
           <div class="subscribe__container-textholder">
@@ -302,7 +307,10 @@
           <a class="button__viewmore" href="#">VIEW MORE</a>
         </div>
       </div>
-      <div class="contact__container">
+      <div
+        class="contact__container"
+        style="background-image: url(src/img/background3.png)"
+      >
         <div class="contact__description-holder">
           <h2 class="contact__description-title">Contact</h2>
           <div class="contact__description-textholder">

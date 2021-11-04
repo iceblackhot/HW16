@@ -1,6 +1,9 @@
 .subscribe__container {
   display: flex;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
   width: 100%;
   min-height: 500px;
 }
